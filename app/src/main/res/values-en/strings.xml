@@ -6,4 +6,9 @@
     <string name="btn_calc">CALCULATE</string>
     <string name="input_error">Enter a number</string>
     <string name="btn_clean">CLEAN</string>
+    <string name="add">ADD</string>
+    <string name="multiply">MULTIPLY</string>
+    <string name="divide">DIVIDE</string>
+    <string name="subtract">SUBTRACT</string>
+    <string name="divide_zero_error">Cannot divide by zero</string>
 </resources>

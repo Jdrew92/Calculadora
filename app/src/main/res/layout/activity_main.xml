@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/input_number"
-        android:inputType="numberSigned|number" />
+        android:inputType="numberSigned|number|numberDecimal" />
 
     <EditText
         android:id="@+id/txtNmbrTwo"
@@ -30,7 +30,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/input_number"
-        android:inputType="numberSigned|number" />
+        android:inputType="numberSigned|number|numberDecimal" />
+
+    <Spinner
+        android:id="@+id/cmbOp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/lblResult"

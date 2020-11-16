@@ -5,4 +5,17 @@
     <string name="btn_calc">CALCULAR</string>
     <string name="input_error">Digite un número</string>
     <string name="btn_clean">LIMPIAR</string>
+    <string name="add">SUMAR</string>
+    <string name="subtract">RESTAR</string>
+    <string name="multiply">MULTIPLICAR</string>
+    <string name="divide">DIVIDIR</string>
+    
+    <string-array name="operations">
+        <item>@string/add</item>
+        <item>@string/subtract</item>
+        <item>@string/multiply</item>
+        <item>@string/divide</item>
+    </string-array>
+    <string name="divide_zero_error">No se puede dividir entre cero</string>
+
 </resources>
