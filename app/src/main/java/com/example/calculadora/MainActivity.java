@@ -24,12 +24,30 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void calcular (View v){
+    public void calculate (View v){
         double n1, n2, suma;
-        n1 = Double.parseDouble(num1.getText().toString());
-        n2 = Double.parseDouble((num2.getText().toString()));
-        suma = n1+n2;
-        //Es necesario pasarle el resultado como String
-        result.setText(String.valueOf(suma));
+        if(validate()) {
+            n1 = Double.parseDouble(num1.getText().toString());
+            n2 = Double.parseDouble((num2.getText().toString()));
+            suma = n1 + n2;
+            //Es necesario pasarle el resultado como String
+            result.setText(String.valueOf(suma));
+        }
+    }
+
+    public boolean validate (){
+        if(num1.getText().toString().isEmpty()){
+            num1.setError(getString(R.string.input_error));
+            num1.requestFocus();
+            return false;
+        }
+        else if(num2.getText().toString().isEmpty()){
+            num2.setError(getString(R.string.input_error));
+            num2.requestFocus();
+            return false;
+        }
+        else {
+            return true;
+        }
     }
 }

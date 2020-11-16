@@ -21,22 +21,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/number_one"
-        android:inputType="number" />
+        android:hint="@string/input_number"
+        android:inputType="numberSigned|number" />
 
     <EditText
         android:id="@+id/txtNmbrTwo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/number_two"
-        android:inputType="number" />
+        android:hint="@string/input_number"
+        android:inputType="numberSigned|number" />
 
     <Button
         android:id="@+id/btnCalc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="calcular"
+        android:onClick="calculate"
         android:text="@string/btn_calc" />
 
     <TextView

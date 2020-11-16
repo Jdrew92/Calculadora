@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Calculadora</string>
     <string name="titulo">CALCULADORA</string>
-    <string name="number_one">Número Uno</string>
-    <string name="number_two">Número Dos</string>
+    <string name="input_number">Escriba un número</string>
     <string name="btn_calc">CALCULAR</string>
+    <string name="input_error">Digite un número</string>
 </resources>
