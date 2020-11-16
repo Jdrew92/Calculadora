@@ -5,4 +5,5 @@
     <string name="input_number">Type a number</string>
     <string name="btn_calc">CALCULATE</string>
     <string name="input_error">Enter a number</string>
+    <string name="btn_clean">CLEAN</string>
 </resources>

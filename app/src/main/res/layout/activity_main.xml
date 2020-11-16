@@ -32,16 +32,32 @@
         android:hint="@string/input_number"
         android:inputType="numberSigned|number" />
 
-    <Button
-        android:id="@+id/btnCalc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="calculate"
-        android:text="@string/btn_calc" />
-
     <TextView
         android:id="@+id/lblResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="calculate"
+            android:text="@string/btn_calc" />
+
+        <Button
+            android:id="@+id/btnClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clean"
+            android:text="@string/btn_clean" />
+
+    </LinearLayout>
 </LinearLayout>

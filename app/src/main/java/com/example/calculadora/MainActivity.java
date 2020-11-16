@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean validate (){
         if(num1.getText().toString().isEmpty()){
             num1.setError(getString(R.string.input_error));
-            num1.requestFocus();
+            num1.requestFocus(); //Coloca el cursor en ese campo
             return false;
         }
         else if(num2.getText().toString().isEmpty()){
@@ -49,5 +49,12 @@ public class MainActivity extends AppCompatActivity {
         else {
             return true;
         }
+    }
+
+    public void clean(View v){
+        num1.setText("");
+        num2.setText("");
+        result.setText("");
+        num1.requestFocus();
     }
 }
